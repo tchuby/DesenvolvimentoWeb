@@ -1,0 +1,44 @@
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.forms,
+.checks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forms li,
+.checks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.forms li label,
+.forms li p {
+    padding: 8px;
+}
+
+.forms > li > label,
+.checks li p {
+    flex: 1 120px;
+    max-width: 220px;
+}
+
+label + * {
+    flex: 1 220px;
+}
+
+.forms li [type='submit'] {
+    background-color: rgb(159, 139, 110);
+    margin-left: auto;
+    padding: 1.5em;
+}
+
+.forms li [type='submit']:hover {
+    background-color: rgb(159, 139, 110);
+    margin-left: auto;
+    padding: 1.5em;
+}
