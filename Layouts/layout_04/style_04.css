@@ -1,0 +1,61 @@
+body {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-areas: "header header"
+                         "author summary";
+
+    font-family: 'Raleway', sans-serif;
+
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+    text-align: justify;
+    background-color: darkslategray;
+    color: bisque;
+}
+
+#author {
+    grid-area: author;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+    text-align: justify;
+    background-color: gray;
+    color: bisque;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#author img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#summary {
+    grid-area: summary;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: lightgray;
+    color: darkslategray;
+}
+
+#summary p, h2 {
+    padding: 10px;
+    text-align: justify;
+}

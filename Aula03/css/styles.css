@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet');
+
+* {
+    color: green;
+    font-family:'Courier New', Courier, monospace;
+}
+
+img {
+    width: 25%;
+}
+
+h1 {
+    font-family:'Dokdo','Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+#futebol {
+    text-decoration: underline;
+}
+
+.italico {
+    font-style: italic;
+}
+
+#navegacao a {
+    text-decoration: none;
+}
+
+#navegacao a:hover {
+    text-decoration: underline;
+}
+
+[href='futebol.html']{
+    font-weight: bold;
+}
+
+
+/*
+.class
+.class1.class2
+.class1 .class2
+#id x
+*
+element
+element.class
+element,element
+element element
+element>element
+element+element
+element1~element2
+[attribute]
+[attribute=value]
+:active 
+::after 
+::before 
+:checked 
+:default 
+:disabled 
+*/

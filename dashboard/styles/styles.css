@@ -1,0 +1,73 @@
+body {
+  display: grid;
+  grid-template-areas: "header header"
+                       "main main"
+                       "footer footer";
+  gap: 5px;
+}
+
+header, main, footer {
+  background-color:darkslategray;
+  min-height: 100px;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > div {
+  color: silver;
+  font-size: 30px;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main > div {
+  background-color: darkgray;
+  margin: 5px;
+  height: 200px;
+  width: 400px;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: silver;
+}
+
+footer > div {
+  margin: 10px;
+}
+
+#carousel {
+  overflow: hidden;
+  height: 100px;
+  width: 480px;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(0);
+}
+
+#container > img {
+  width: auto;
+  height: 100px;
+}
+
+div > a {
+  color: silver;
+}

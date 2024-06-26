@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+
+    <header>
+
+        <section id="foto_perfil">
+            <img src="img/perfil.jpg">
+        </section>
+        
+        <section id="apresentacao">
+            <h1 id="titulo">Daniel Andrade Silva</h1>
+            <h2 id="subtitulo">Desenvolvedor, estudante e um pouco mais.</h2>
+        </section>
+
+    </header>
+
+    <nav id="navegacao">
+        <a href="index.html">Início</a>
+        <a href="hobby.html">Hobby Favorito</a>
+        <a href="cursos.html">O que estou estudando</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Fale um pouco sobre si</h2>
+
+            <form action="" method="post">
+                <ul class="forms">
+                    <li>
+                        <label for="nome">Nome ou apelido:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Didi Mocó">
+                    </li>
+
+                    <li>
+                        <label for="numero">Seu número da sorte:</label>
+                        <input type="number" id="numero">
+                    </li>
+
+                    <li>
+                        <label for="energia">Como está sua energia hoje?</label>
+                        <input type="range" id="energia">
+                    </li>
+
+                    <li>
+                        <label for="email">Digite o seu pior email:</label>
+                        <input type="email" id="email" placeholder="email@email.com">
+                    </li>
+
+                    <li>
+                        <p>Qual o seu malvado favorito?</p>
+                        <ul class="checks">
+                            <li>
+                                <label for="vigarista">Dick Vigarista</label>
+                                <input type="radio" name="malvado" id="vigarista">
+                            </li>
+                            <li>
+                                <label for="esqueleto">Esqueleto</label>
+                                <input type="radio" name="malvado" id="esqueleto">
+                            </li>
+                            <li>
+                                <label for="gargamel">Gargamel</label>
+                                <input type="radio" name="malvado" id="gargamel">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <p>Doenças que já teve:</p>
+                        <ul class="checks">
+                            <li>
+                                <label for="doenca1">Cachumba</label>
+                                <input type="checkbox" name="doenca1" id="doenca1" value="Cachumba">
+                            </li>
+                            <li>
+                                <label for="doenca2">Catapora</label>
+                                <input type="checkbox" name="doenca2" id="doenca2" value="Catapora">
+                            </li>
+                            <li>
+                                <label for="doenca3">Carambola</label>
+                            <input type="checkbox" name="doenca3" id="doenca3" value="Carambola">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <label for="corfav">Escolha sua cor favorita:</label>
+                        <input type="color" id="corfav" name="corfav" value="#ffffff">
+                    </li>
+
+                    <li>
+                        <label for="bday">Data de aniversário:</label>
+                        <input type="date" id="bday" name="bday">
+                    </li>
+
+                    <li>
+                        <label for="meslongo">Mês mais longo da vida:</label>
+                        <input type="month" id="meslongo" name="meslongo">
+                    </li>
+
+                    <li>
+                        <label for="carros">Marca do primeiro carro:</label>
+    
+                        <select name="carros" id="carros">
+                            <option value="ford">Ford</option>
+                            <option value="gm">GM</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="fiat">Fiat</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="pensamento">Um pensamento:</label><br>
+                        <textarea id="pensamento" name="pensamento" rows="4" cols="50">
+                            Escreva um pensamento pseudointeligente que impressione sem dizer nada.
+                        </textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Obrigado">
+                    </li>
+                </ul>
+            </form>
+    
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Tchuby Co.</p>
+    </footer>
+</body>
+</html>

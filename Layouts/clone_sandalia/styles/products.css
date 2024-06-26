@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sansita+Swashed:wght@300..900&display=swap');
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-weight:400;
+    font-size: 12px;
+}
+
+#header{
+    background-color:rgb(235, 14, 132);
+    grid-area: header;
+    display: flex;
+    flex-direction: auto;
+
+    align-items: center;
+}
+
+#logo{
+    font-family: "Clicker Script", cursive;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px 40px;
+    color: whitesmoke;
+}
+
+#menu {
+    display: flex;
+    padding: 10px 40px 10px 10px;
+}
+
+#menu > a {
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#bread_crumb {
+    grid-area: bread_crumb;
+    color:gray;
+    font-size: 10px;
+    padding: 10px 10px 10px 40px;
+}
+
+.highlight {
+    color:rgb(235, 14, 132);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.selected {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(235, 14, 132);
+}
+
+.title {
+    color: black;
+    font-size: 20px;
+    font-family: "Sansita Swashed", system-ui;
+}
+
+.cod {
+    color: gray;
+    font-size: 8px;
+}
+
+main {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+}
+
+th{
+    background-color: rgb(235, 14, 132);
+    color: white;
+}
+
+th, td {
+    border-bottom: 1px solid gray;
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color: darkgray;
+}
+
+#footer {
+    padding: 10px 40px 10px 40px;
+    grid-area: footer;
+    justify-self: center;
+    width: 80%;
+}
+
+#enviroment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.tag_enviroment {
+    font-size: 15px;
+    color: darkgray;
+    text-align: center;
+}
+
+.susteinability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin:10px;
+    background-color: rgb(112, 175, 112);
+    font-size: 8px;
+    font-weight: bold;
+    color:lightblue;
+    border-radius: 20px;
+}
+
+.susteinability_image{
+    width: 70px;
+    height: 70px;
+}
+
+img{
+    width: 30px;
+    margin: 5px;
+    border-radius: 5px;
+}

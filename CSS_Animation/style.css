@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+
+
+#tigrinho {
+    width: 50%;
+    margin: 0 auto;
+
+    font-family: "Dokdo", 'Courier New', Courier, monospace;
+    font-size: 3em;
+    text-align: center;
+    color: orange;
+
+    transition: color 3s, background-color 3s;
+
+    transform: rotate(5deg) translate(5px, 5px);
+}
+
+#tigrinho:hover {
+    color: #fff;
+    background-color: orange;
+    transform: rotate(-5deg) translate(-5px, -5px);
+}
+
+#espaco_bola {
+    
+}
+
+#bola {
+    
+    width: 0%;
+    margin: 0 auto;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 7px 7px 30px 9px gray;
+    
+    animation-name: quicar;
+    animation-duration: 0.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes quicar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(150px);
+    }
+}

@@ -1,0 +1,103 @@
+.car {
+    width: 200px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    translate: 0 100px;
+    
+    animation-name: guide;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes guide {
+    from {
+        transform: translateX(-120px);
+    }
+    to {
+        transform: translateX(120px);
+    }
+}
+
+.bodywork{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.windshield{
+    background-color: darkblue;
+    height: 50px;
+    width:150px;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.glass {
+    background-image: linear-gradient(45deg, black, silver, black);
+    height: 45px;
+    width: 140px;
+    clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%);
+    margin: 5px 0px 0px 0px;
+}
+
+.trunk{
+    height: 50px;
+    width: 180px;
+    background-color: darkblue;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.lights {
+    width: 180px;
+    padding: 0px 10px 0px 10px;
+    
+    display:flex;
+    justify-content:space-between;
+}
+
+.light {
+    width: 50px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 5px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.arrow {
+    width: 15px;
+    height: 20px;
+    background-color:darkorange;
+}
+
+.bumper{
+    background-image: linear-gradient(silver, black);
+    height: 20px;
+    border-radius: 10px;
+}
+
+.wheels{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+
+.wheel {
+    background-color: darkslategray;
+    width: 35px;
+    height: 20px;
+    border-radius: 0px 0px 7px 7px;
+}

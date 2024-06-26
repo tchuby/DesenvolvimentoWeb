@@ -1,0 +1,54 @@
+.sky{
+    background-image: linear-gradient(cyan, darkorange);
+    height: 200px;
+}
+
+.land {
+    background-color: darkolivegreen;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.road {
+    height: 300px;
+    width: 600px;
+    background-color: rgb(59, 59, 59);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.lanes{
+    height: 720px;
+    width: 50px;
+    clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+} 
+
+.lane{
+    width: 100%;
+    background-color: bisque;
+
+    animation: lane_speed .75s linear infinite;
+} 
+
+@keyframes lane_speed{
+    from {
+        height: 40px;
+        transform: translateY(-380px);
+    }
+    to {
+        height: 160px;
+        transform: translateY(80px);
+    }
+}
